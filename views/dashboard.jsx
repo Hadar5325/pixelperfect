@@ -39,26 +39,40 @@ export function Dashboard() {
                 <div className="heading">DashBoard</div>
                 <div className="container-dashboard-info">
                     <section className="dashboard-info">
-                        <div className="booking-card">
-                            <div className="heading-card">
-                                <div>Booking</div>
-                                <div>&^&^</div>
+                        <div className="booking-card card">
+                            <div className="container-card">
+                                <div className="heading-card">
+                                    <div>Booking</div>
+                                    <img src="../assets/img/dashboard/schedule.png" />
+                                </div>
+                                <div className="value">25</div>
+                                <div className="container-text-option">
+                                    <div className="text-option">
+                                        This week
+                                    </div>
+                                    <img src="../assets/img/dashboard/arrow-down.png" />
+                                </div>
                             </div>
-                            <div>25</div>
-                            <div>This week</div>
                         </div>
-                        <div className="sales-card">
-                            <div className="heading-card">
-                                <div>Sales</div>
-                                <div>logo</div>
+                        <div className="sales-card card">
+                            <div className="container-card">
+                                <div className="heading-card">
+                                    <div>Sales</div>
+                                    <img src="../assets/img/dashboard/sales.png" />
+                                </div>
+                                <div className="value">$1000</div>
+                                <div className="container-text-option">
+                                    <div className="text-option">
+                                        This week
+                                    </div>
+                                    <img src="../assets/img/dashboard/arrow-down.png"/>
+                                </div>
                             </div>
-                            <div>1000</div>
-                            <div>This week</div>
                         </div>
                         <div className="my-tasks-today">
                             <div className="heading-card">
                                 <div>My Tasks today</div>
-                                <div>logo</div>
+                                <img src="../assets/img/dashboard/todo.png"/>
                             </div>
                             <div className="schedule">
                                 <div className="time">
