@@ -1,0 +1,162 @@
+section.modal-background {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0,0, 0.5); */
+    background-color: white;
+    position: fixed;
+}
+
+div.modal-container {
+    background-color: aqua;
+    font-size: 10px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+button.dropdown-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+div.dropdown {}
+
+div.top-nav,
+div.edit,
+div.cancel,
+div.item,
+div.info-container,
+div.participant,
+div.workout-container,
+div.heading-participant-container,
+div.icons-container {
+    display: flex;
+}
+
+div.edit {
+    padding-left: 5px;
+}
+
+div.text,
+div.user-name {
+    align-self: center;
+}
+
+div.participant {
+    justify-content: space-between;
+}
+
+div.heading-participant-container {
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+div.info-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+div.item {
+    align-items: center;
+}
+
+div.edit {
+    padding-right: 30px;
+}
+
+div.workout-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+div.item,
+div.workout-container {
+    flex-direction: column;
+}
+
+div.icons-container {
+    padding-left: 20px;
+}
+
+div.you-should-know-container,
+div.participats {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+div.participant {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+img.participant-image {
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+div.user-name {
+    padding-left: 10px;
+}
+
+button {
+    background-color: green;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+img.workout {
+    height: 60px;
+    width: 60px;
+}
+
+/* @media screen and (max-width: 500px) { */
+/* div.modal-container{ */
+/* width: 500px; */
+/* height: 500px; */
+/* } */
+/* } */
