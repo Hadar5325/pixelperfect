@@ -65,11 +65,11 @@ export function Modal({ setOpenModal }) {
     }
 
     function renderClients() {
-        return <section>
+        return <div className="dropdown-content">
             {clients.map(client => {
                 return <ClientsDetails key={client.id} client={client} onSelect={onSelect} />
             })}
-        </section>
+        </div>
     }
 
     function createParticipants() {
@@ -102,7 +102,7 @@ export function Modal({ setOpenModal }) {
     }
 
 
-    return <section onClick={()=>setOpenModal(false)} className="modal-background">
+    return <section onClick={() => setOpenModal(false)} className="modal-background">
         <div onClick={(ev) => {
             ev.stopPropagation()
         }} className="modal-container">
@@ -118,29 +118,35 @@ export function Modal({ setOpenModal }) {
             </div>
             <div className="workout-container">
                 <img className="workout" src="../assets/img/modal/workout.png" />
-                <div>Workout of the day</div>
+                <div className="workout-text">Workout of the day</div>
             </div>
             <hr />
             <div className="info-container">
                 <div className="item">
                     <img src="../assets/img/modal/man.png" />
-                    <div>Tom A</div>
-                    <div>Coach</div>
+                    <div className="info">
+                        <div className="info-top">Tom A</div>
+                        <div className="info-bottom">Coach</div>
+                    </div>
                 </div>
                 <div className="item">
                     <img src="../assets/img/modal/clock.png" />
-                    <div>16:15</div>
-                    <div>Start Time</div>
+                    <div className="info">
+                        <div className="info-top">16:15</div>
+                        <div className="info-bottom">Start Time</div>
+                    </div>
                 </div>
                 <div className="item">
                     <img src="../assets/img/modal/participants.png" />
-                    <div>3/15</div>
-                    <div>Participants</div>
+                    <div className="info">
+                        <div className="info-top">3/15</div>
+                        <div className="info-bottom">Participants</div>
+                    </div>
                 </div>
             </div>
             <hr />
             <div className="you-should-know-container">
-                <div>You Should Know</div>
+                <div className="should-know">You Should Know...</div>
                 <div>Degan & Eden which participates in the class have a debt</div>
             </div>
             <hr />
@@ -151,7 +157,6 @@ export function Modal({ setOpenModal }) {
                     </div>
                     <div className="dropdown">
                         <button className="dropdown-button">Add client</button>
-                        <div className="dropdown-content">
                             {renderClients()}
                             {/* <a href="#">
                                 <div>icon</div>
@@ -165,7 +170,6 @@ export function Modal({ setOpenModal }) {
                                 <div>icon</div>
                                 <div>Tomi Tomi</div>
                             </a> */}
-                        </div>
                     </div>
                 </div>
                 <div className="participans-contianer">
