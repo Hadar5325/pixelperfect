@@ -1,6 +1,6 @@
 import { Modal } from "../cmps/modal.jsx"
 
-const { useEffect, useState, useRef } = React
+const {useState } = React
 
 export function Dashboard() {
 
