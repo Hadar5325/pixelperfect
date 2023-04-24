@@ -5,12 +5,8 @@ const { useEffect, useState, useRef } = React
 export function Dashboard() {
 
     const [openModal, setOpenModal] = useState(false)
-    const [isTrue, setIsTrue] = useState(true)
-    // const refAppClicked = useRef(null)
 
     useState(() => {
-        // setIsOpened(true)
-        // setIsOpened(false)
     }, [openModal])
 
     return <section className="app" onClick={() => setOpenModal(true)}>

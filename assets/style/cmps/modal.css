@@ -14,6 +14,17 @@ div.modal-container {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 10;
+}
+
+div.to-close-modal {
+    z-index: 5;
+    position: fixed;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: left;
 }
 
 
@@ -169,7 +180,7 @@ div.user-name {
 }
 
 /* button { */
-    /* background-color: var(--clr15); */
+/* background-color: var(--clr15); */
 /* } */
 
 button.checked {

@@ -103,9 +103,7 @@ export function Modal({ setOpenModal }) {
 
 
     return <section onClick={() => setOpenModal(false)} className="modal-background">
-        <div onClick={(ev) => {
-            ev.stopPropagation()
-        }} className="modal-container">
+        <div onClick={(ev) => { ev.stopPropagation() }} className="modal-container">
             <div className="top-nav">
                 <div className="edit">
                     <img src="../assets/img/modal/edit.png" />
@@ -157,24 +155,13 @@ export function Modal({ setOpenModal }) {
                     </div>
                     <div className="dropdown">
                         <button className="dropdown-button">Add client</button>
-                            {renderClients()}
-                            {/* <a href="#">
-                                <div>icon</div>
-                                <div>Tom Levi</div>
-                            </a>
-                            <a href="#">
-                                <div>icon</div>
-                                <div>Tomer Cohen</div>
-                            </a>
-                            <a href="#">
-                                <div>icon</div>
-                                <div>Tomi Tomi</div>
-                            </a> */}
+                        {renderClients()}
                     </div>
                 </div>
                 <div className="participans-contianer">
                     {renderParticipant()}
                 </div>
+                <div onClick={()=>setOpenModal(false)}> close </div>
             </div>
         </div>
     </section>
