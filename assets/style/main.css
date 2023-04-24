@@ -1,26 +1,12 @@
 /* Setup */
 @import 'setup/vars.css';
-@import 'setup/typography.css';
 
-/* /~ /~ Base ~/ ~/ */
-/* @import 'base/base.css'; */
-/* @import 'base/helpers.css'; */
-/* @import 'base/layout.css'; */
-/* @import 'base/forms.css'; */
+/** Mobile First **/
+/* Views */
+@import "views/mobile-dashboard.css";
+@import "views/tablet-dashboard.css" screen and (min-width: 450px);
+@import "views/desktop-dashboard.css" screen and (min-width: 800px);
 
-/* /~ Views ~/ */
-/* @import 'views/home.css'; */
-/* @import 'views/car-details.css'; */
-/* @import 'views/car-edit.css'; */
 
 /* Components */
-@import 'cmps/modal.css';
-
-/* @import 'cmps/app-header.css'; */
-/* @import 'cmps/user-msg.css'; */
-/* @import 'cmps/car-filter.css'; */
-/* @import 'cmps/car-list.css'; */
-/* @import 'cmps/car-preview.css'; */
-
-/* Views */
-@import 'views/dashboard.css';
+@import "cmps/mobile-modal.css";
