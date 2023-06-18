@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section.app {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Nav bar */
+div.top-nav-bar {
+    background-color: var(--clr1);
+    height: 160px;
+}
+
+section.nav-bar {
+    background-color: var(--clr2);
+    width: 160px;
+    height: 100vh;
+    font-size: 12px;
+}
+
+/* Dashbord */
+
+section.layout {
+    font-size: 10px;
+    padding: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr3);
+}
+
+div.container-dashboard-info {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+section.container-dashboard {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20px 20px 1fr;
+}
+
+div.booking-card {
+    grid-area: booking-card;
+}
+
+div.sales-card {
+    grid-area: sales-card;
+}
+
+div.my-tasks-today {
+    grid-area: my-tasks-today;
+}
+
+div.popular-service-container {
+    grid-area: popular-service;
+}
+
+/*Card in dashboard*/
+div.card {
+
+    background-color: var(--clr2);
+}
+
+div.container-card {
+    padding: 8px;
+}
+
+div.heading-card,
+div.container-text-option,
+div.my-tasks-today heading-card div.hour-section {
+    display: flex;
+}
+
+div.heading-card {
+    align-self: center;
+}
+
+div.heading-card,
+div.container-text-option,
+div.my-tasks-today heading-card,
+div.hour-section {
+    justify-content: space-between;
+}
+
+div.my-tasks-today {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+div.hour-section {
+    flex-direction: column;
+}
+
+div.table-tasks {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "time-6 tasks-for-6"
+        "time-7 tasks-for-7";
+}
+
+div.hour-time-6 {
+    grid-area: time-6;
+}
+
+div.hour-time-7 {
+    grid-area: time-7;
+}
+
+div.sub-heading {
+    width: 100%;
+    display: flex;
+    color: var(--clr3);
+    align-items: center;
+}
+
+div.task-important {
+    background-color: var(--clr5);
+}
+
+div.task-regular {
+    background-color: var(--clr6);
+}
+
+div.trx {
+    background-color: var(--clr7);
+}
+
+div.working-on-the-day {
+    background-color: var(--clr9);
+}
+
+div.pilates {
+    background-color: var(--clr11);
+}
+
+div.yoga {
+    background-color: var(--clr5);
+}
+
+div.sub-heading {
+    justify-content: space-between;
+}
+
+div.task {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+div.tasks-for-6 {
+    grid-area: tasks-for-6;
+}
+
+div.tasks-for-7 {
+    grid-area: tasks-for-7;
+}
+
+hr.hr-time {
+    color: red;
+    height: 4px;
+    padding-bottom: 5px;
+}
+
+div.value {
+    padding-top: 6px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.container-text-option {
+    font-size: 8px;
+    height: 20px;
+    width: 70px;
+    padding: 3px;
+    background-color: var(--clr4);
+}
+
+div.task-text {
+    font-weight: bold;
+    color: var(--clr2);
+}
+
+div.content {
+    padding: 3px;
+}
+
+/* popular service*/
+div.popular-heading-container,
+div.popular-item,
+div.popular-item,
+div.items {
+    display: flex;
+}
+
+div.popular-heading-container,
+div.popular-item,
+div.heading-Top-Appointment {
+    justify-content: space-between;
+}
+
+div.popular-item,
+div.items,
+div.heading-Top-Appointment {
+    align-items: center;
+}
+
+div.popular-service-container {
+    background-color: var(--clr2);
+}
+
+div.color {
+    height: 20px;
+    width: 2px;
+    border-radius: 10px;
+}
+
+div.color.green {
+    background-color: var(--clr7);
+}
+
+div.color.red {
+    background-color: var(--clr8);
+}
+
+div.color.purple {
+    background-color: var(--clr9);
+}
+
+div.color.blue {
+    background-color: var(--clr10);
+}
+
+div.color.yellow {
+    background-color: var(--clr11);
+}
+
+div.text-item {
+    padding-left: 10px;
+}
+
+div.popular-heading-container {
+    padding-bottom: 20px;
+}
+
+div.popular-service-container,
+div.top-appointment-types {
+    padding: 8px;
+}
+
+div.popular-item {
+    padding-bottom: 10px;
+}
+
+/* Top appointment */
+div.top-appointment-types {
+    grid-area: top-appointment;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+        "top-appointment-heading"
+        "circle";
+}
+
+div.heading-Top-Appointment {
+    display: flex;
+    justify-items: center;
+}
+
+div.container-text-option {
+    align-items: center;
+}
+
+div.schedule-container {
+    grid-area: schedule;
+    padding: 8px;
+}
+
+/* Schedule */
+div.container-date,
+div.schedule-heading,
+div.item-nav {
+    display: flex;
+}
+
+div.container-date {
+    align-items: center;
+}
+
+div.schedule-heading {
+    justify-content: space-between;
+}
+
+div.task-regular div.sub-heading {
+    padding-bottom: 5px;
+}
+
+div.table-tasks-schedule {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "time-6 tasks-for-6"
+        "time-7 tasks-for-7"
+        "time-8 tasks-for-8";
+}
+
+div.schedule-container {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 10fr;
+}
+
+div.date-class {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+div.hour-time-8 {
+    grid-area: time-8;
+}
+
+div.tasks-for-8 {
+    grid-area: tasks-for-8;
+}
+
+div.item-nav {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+div.item-nav div.text {
+    padding-left: 10px;
+}
+
+img.arbox {
+    width: 100px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+img.fitness {
+    width: 75px;
+    height: 72px;
+    padding-top: 5px;
+}
+
+div.fitness,
+div.arbox,
+div.crossfit {
+    justify-content: center;
+    display: flex;
+}
+
+div.fitness {
+    padding-right: 10px;
+}
+
+div.crossfit {
+    padding-top: 10px;
+    color: var(--clr2)
+}
+
+img.arrow-down-white {
+    padding-left: 10px;
+}
+
+div.heading-dashboard {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 2px;
+}
+
+img.nav-img {
+    height: 17px;
+    width: 17px;
+}
+
+div.my-tasks-today,
+div.sales-card,
+div.booking-card,
+div.popular-service-container,
+div.top-appointment-types,
+div.schedule-container {
+    background-color: var(--clr2);
+}

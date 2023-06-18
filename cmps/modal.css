@@ -1,0 +1,238 @@
+section.modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    font-family: sans-serif;
+}
+
+div.modal-container {
+    background-color: var(--clr2);
+    font-size: 9px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+div.to-close-modal {
+    z-index: 5;
+    position: fixed;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: left;
+}
+
+
+div.workout-text {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cl2);
+    width: 130px;
+    z-index: 1;
+}
+
+section.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+button.client {
+    color: var(--clr12);
+    width: 130px;
+    text-decoration: none;
+    display: block;
+    background-color: var(--clr13);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content div.client-container:hover {
+    background-color: var(--clr14);
+    cursor: pointer;
+}
+
+button.dropdown-button {
+    font-size: 8px;
+    height: 20px;
+    width: 130px;
+    padding: 3px;
+    background-color: var(--clr4);
+    border: none;
+    cursor: pointer;
+}
+
+div.client-container {
+    display: flex;
+}
+
+img.client-image {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+img.participant-image,
+img.client-image {
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+div.top-nav,
+div.edit,
+div.cancel,
+div.item,
+div.info-container,
+div.participant,
+div.workout-container,
+div.heading-participant-container,
+div.icons-container {
+    display: flex;
+}
+
+div.edit {
+    padding-left: 5px;
+}
+
+div.text,
+div.user-name {
+    align-self: center;
+    font-size: 8px;
+}
+
+div.participant {
+    justify-content: space-between;
+}
+
+div.heading-participant-container {
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+div.info-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+div.item {
+    align-items: center;
+}
+
+div.edit {
+    padding-right: 30px;
+}
+
+div.workout-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+div.item,
+div.workout-container {
+    flex-direction: column;
+}
+
+div.icons-container {
+    padding-left: 20px;
+    align-items: center;
+}
+
+div.you-should-know-container,
+div.participats {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+div.participant {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+
+
+div.user-name {
+    padding-left: 10px;
+}
+
+button.checked {
+    color: var(--clr15);
+    border: 1px solid var(--clr15);
+    border-radius: 2px;
+    background-color: var(--clr2);
+}
+
+button.check-in {
+    color: var(--clr2);
+    background-color: var(--clr15);
+    border: none;
+}
+
+button.checked,
+button.check-in {
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+img.trash {
+    color: var(--clr8);
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+img.workout {
+    height: 60px;
+    width: 60px;
+}
+
+div.info {
+    padding-top: 11px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div.info-top {
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: 9px;
+}
+
+div.info-bottom {
+    font-size: 7px;
+}
+
+div.should-know {
+    font-size: 10px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
